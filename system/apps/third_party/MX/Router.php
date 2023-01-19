@@ -51,10 +51,12 @@ class MX_Router extends CI_Router
 		{
 			foreach(range(0, 2) as $v)
 			{
-				isset($segments[$v]) && $segments[$v] = str_replace('-', '_', $segments[$v]);
+				isset($segments[$v]) && $segments[$v] = strtolower(str_replace('-', '_', $segments[$v]));
 			}
 		}
-		
+// 		echo '<pre>';
+// 		print_r($segments);
+// 		exit;
 		$segments = $this->locate($segments);
 
 		if($this->located == -1)
@@ -235,10 +237,13 @@ class MX_Router extends CI_Router
 
 	public function set_class($class)
 	{
+	    
 		$suffix = $this->config->item('controller_suffix');
-		if (strpos($class, $suffix) === FALSE)
-		{
-			$class .= $suffix;
+		if(!empty($suffix)){
+    		if (strpos($class, $suffix) === FALSE AND !empty($class))
+    		{
+    			$class .= $suffix;
+    		}
 		}
 		parent::set_class($class);
 	}

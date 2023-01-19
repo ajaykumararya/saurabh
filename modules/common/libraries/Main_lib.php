@@ -9,7 +9,13 @@ class Main_lib {
         //$this->CI->output->enable_profiler(TRUE);
     }
     
-    
+    function check_user($username){
+        $get =  $this->CI->db->select('*')->where('username', $username)->get('users');
+        
+        if($get->num_rows())
+                return $get->row_array();
+        return false;
+    }
 
 
     function get_users($url, $table){

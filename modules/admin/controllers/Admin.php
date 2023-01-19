@@ -6,18 +6,19 @@ class Admin extends MX_Controller {
     function __construct()
     {
         parent::__construct();
-        $seg = $this->uri->segment(2);
-        if ($seg!="install" && $seg!= "install_action") {
-            if (file_exists('install.txt')) {
-                redirect(base_url('install/install'), 'location');
-            }
-        }
         $this->load->database();
         $this->load->model('pages_model');
         $this->load->library('common/main_lib');
+
+        $thisMethod = strtolower($this->router->fetch_method());
+        $thisController = strtolower($this->router->fetch_class());
+
+        if($this->session->userdata('admin_logged_in') != '1' AND $thisMethod != 'index'){
+            redirect('admin');
+        }
         //обработка определения языка
         if(!isset($_SESSION["lang"])){
-            $result = $this->db->select('*')->where('default', '1')->get('language')->row_array(); // выборка ленгвиж из таблицы настройки сайта
+            $result['language'] = 'english';//$this->db->select('*')->where('default', '1')->get('language')->row_array(); // выборка ленгвиж из таблицы настройки сайта
         }else{ 
             $result['language'] = $_SESSION["lang"]; 
         }
@@ -38,12 +39,17 @@ class Admin extends MX_Controller {
         
         
         
+        // echo $login;
         if(isset($login)){
-            $data = $this->main_lib->get_users($login, 'users');
-            $passmd5 = md5($data['password']);
+            $passmd5 = '';
+            if($data = $this->main_lib->check_user($login)){
+                $passmd5 = ($data['password']);
+            }
+            else    
+            $data = ['username' => '','password' => ''];
+           
         }
-        
-        if($this->session->userdata('logged_in') == '1'){
+        if($this->session->userdata('admin_logged_in') == '1'){
             
             // добавляем на главную админки перевод
             
@@ -106,10 +112,7 @@ class Admin extends MX_Controller {
                 'user_img' => $this->session->userdata('user_img'),
                 'name' => $this->session->userdata('name'),
                 'user_id' => $this->session->userdata('user_id'),
-                'them_skin' => $this->session->userdata('them_skin'),
-                'lang' => $this->session->userdata('lang'),
-                'all_users' => $this->pages_model->count_all_user('users'),
-                'all_pages' => $this->pages_model->count_all_user('pages')                
+                'lang' => $this->session->userdata('lang'),              
             );
             
             
@@ -150,11 +153,7 @@ class Admin extends MX_Controller {
                 'name' => $data['name'],
                 'user_img' => $data['img'],
                 'user_id' => $data['id'],
-                'group_id' => $data['group_id'],
-                'them_skin' => $data['them_skin'],
-                'lang' => $data['language'],
-                'logged_in' => TRUE,
-                'KCFINDER' => Array('disabled' => TRUE)
+                'admin_logged_in' => TRUE,
             );
             
             $this->session->set_userdata($newdata);
@@ -195,7 +194,6 @@ class Admin extends MX_Controller {
     public function helpicon()
 	{
 	   
-        if($this->session->userdata('logged_in') == '1'){
             $data = array(
                 'title' => 'Иконки',
                 'user_img' => $this->session->userdata('user_img'),
@@ -210,18 +208,12 @@ class Admin extends MX_Controller {
         $this->parser->parse('header.tpl', $data);
         $this->parser->parse('icons.tpl', $data);
         $this->parser->parse('footer.tpl', $data);    
-        }else{
-            $data = array(
-                'error' => ''
-            );
-            redirect(base_url().'admin/');    
-        }
 		
 	}
     
 ////// public function data()
 //	{
-//	   if($this->session->userdata('logged_in') == '1'){
+//	   if($this->session->userdata('admin_logged_in') == '1'){
 //	       $data_header = array(
 //            'title' => 'Страницы',
 //            'user_img' => $this->session->userdata('user_img'),
@@ -249,7 +241,7 @@ class Admin extends MX_Controller {
 //    public function editor()
 //	{
 //	   
-//        if($this->session->userdata('logged_in') == '1'){
+//        if($this->session->userdata('admin_logged_in') == '1'){
 //            $data = array(
 //            'title' => 'Редактор',
 //            'user_img' => $this->session->userdata('user_img'),
@@ -275,7 +267,7 @@ class Admin extends MX_Controller {
     //profile
     //public function profile()
 	//{
-	//     if($this->session->userdata('logged_in') == '1'){
+	//     if($this->session->userdata('admin_logged_in') == '1'){
     //        $data = array(
     //        'title' => 'Профиль',
     //        'user_img' => $this->session->userdata('user_img'),

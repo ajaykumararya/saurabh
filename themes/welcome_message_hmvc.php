@@ -71,26 +71,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1><?  echo $heading; ?></h1>
 
 	<div id="body">
-        <p>Это вид в template. Посмотреть  <a href="<?php echo base_url('admin'); ?>">АДМИНКА</a></p>
-        <p>&nbsp;&nbsp;<a href="<?  echo $url; ?>" title="<? echo $name; ?>" target="_blank"><? echo $compani; ?></a>
-        <br /><img style="border-radius: 50%;" src="<? echo $gavatar; ?>" />
-        </p>
+      
+
+
+	<h2>Welcome</h2>
         
-        <p>default_controller срабатывающий призагрузке прописан в файле:</p>
-		<code>system/apps/routes.php</code>
-
-		<p>Контроллер обрабатывающий этот вывод:</p>
-		<code>modules/welcome/controllers/Welcome.php</code>
-
-		<p>Вид размещен:</p>
-		<code>themes/welcome_message_hmvc.php</code>
-
-        <p>Ну а это вызов модуля по HMVC</p>
-        <code><?php echo Modules::run('modules/frontend/hmvc'); ?></code>
 
 	</div>
 
-	<p class="footer">Страница сгенерирорана за <strong>{elapsed_time}</strong> секунд. <?php echo  (ENVIRONMENT === 'development') ?  'Версия CodeIgniter <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+	<p class="footer">Time <strong>{elapsed_time}</strong>  <?php echo  (ENVIRONMENT === 'development') ?  ' CodeIgniter <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
 
 </body>
