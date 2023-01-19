@@ -16,6 +16,6 @@ define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_DATABASE', 'loan');
-define('DB_DBPREFIX', '');
+define('DB_DBPREFIX', '');//hhhh
 
 ?>
