@@ -7,7 +7,7 @@ define('CMS_NAME', 'THOTH');
 define('CMS_SHORT_NAME', 'TH');
 define('CMS_VERSION', '2.0');
 define('CMS_DEV', 'RAMstudio'); 
-define('CMS_DEV_URL', ''); 
+define('CMS_DEV_URL', ''); //yhifs
 define('ADMIN_DIR', 'admins');//not ready
 
 // DB
