@@ -207,8 +207,8 @@ class Admin extends MX_Controller {
             );
         $this->parser->parse('header.tpl', $data);
         $this->parser->parse('icons.tpl', $data);  
-        $this->parser->parse('footer.tpl', $data);    
-		
+        $this->parser->parse('footer.tpl', $data);       
+		// this is a message
 	}
     
 ////// public function data()
