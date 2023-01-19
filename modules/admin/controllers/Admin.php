@@ -206,7 +206,7 @@ class Admin extends MX_Controller {
                 'heading' => 'Страница из модуля админки - Welcome to CodeIgniter HMVC!'
             );
         $this->parser->parse('header.tpl', $data);
-        $this->parser->parse('icons.tpl', $data);
+        $this->parser->parse('icons.tpl', $data);  
         $this->parser->parse('footer.tpl', $data);    
 		
 	}
