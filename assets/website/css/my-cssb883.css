@@ -27,19 +27,19 @@ body {
     z-index: 999999;
 }
 .back-button {
-    border: solid 1px #0063a7;
+    border: solid 1px #a91990;
     padding: 5px 14px;
     border-radius: 3px;
     font-size: 12px;
-    color: #0063a7 !important;
+    color: #a91990 !important;
     float: right;
     margin-bottom: 25px;
     margin-top: -32px;
 }
 
 .back-button:hover {
-    border: solid 1px #0063a7;
-    background:#0063a7;
+    border: solid 1px #a91990;
+    background:#a91990;
     text-decoration:blink !important;
     color: #fff !important;
 }
@@ -158,8 +158,8 @@ body {
 }
 .btn-paynow {
     color:#fff!important;
-    background-color:#0063a7!important;
-    border-color:#0063a7!important
+    background-color:#a91990!important;
+    border-color:#a91990!important
 }
 .paymunt-scucces {
     color:#fff!important;
@@ -421,7 +421,7 @@ table {
     width:100%
 }
 .terms-banner {
-    background:#0063a7;
+    background:#a91990;
     padding:50px 0;
     text-align:center;
     width:100%;
@@ -441,7 +441,7 @@ table {
     color:#fff
 }
 .eye-link {
-    background:#0063a7;
+    background:#a91990;
     padding:2px 6px;
     border-radius:3px;
     color:#fff
@@ -499,7 +499,7 @@ table {
     float:left;
     padding:55px 0;
     margin:0;
-    background:#0063a7
+    background:#a91990
 }
 .bordered {
     border:solid #ccc 1px;
@@ -593,7 +593,7 @@ table {
     color:#8c8c8c
 }
 .apply-now-button {
-    background:#0063a7!important;
+    background:#a91990!important;
     color:#fff!important;
     padding:12px 45px!important;
     border:none!important;
@@ -608,7 +608,7 @@ table {
     float:left;
     padding:0;
     margin:0;
-    background:#0363a3;
+    background: #a91990;
     color:#fff
 }
 .top-left {
@@ -700,26 +700,26 @@ table {
     margin:0 auto;
     width:80px;
     height:3px;
-    background:#0063a7;
+    background:#a91990;
     border:none;
     margin-bottom:20px
 }
 .home-form-back input {
     height:45px!important;
-    border:solid 1px #0063a7;
+    border:solid 1px #a91990;
     margin-bottom:13px
 }
 .home-form-back a {
-    color:#0063a7
+    color:#a91990
 }
 .home-form-back .btn-default {
-    background:#0063a7;
+    background:#a91990;
     color:#fff;
     border:none;
     padding:12px 18px
 }
 .home-form-back .btn-default:hover {
-    background:#0063a7;
+    background:#a91990;
     color:#fff
 }
 .loanwalle-banners {
@@ -739,7 +739,7 @@ table {
     padding-right:0!important
 }
 .subscribe-buton {
-    background:#0063a7!important;
+    background:#a91990!important;
     color:#fff!important;
     padding:14px 30px 13px!important;
     border:none!important;
@@ -840,7 +840,7 @@ table {
 .simple-steps .thumbnail h3 {
     font-weight:500;
     font-size:17px;
-    color:#0063a7;
+    color:#a91990;
     margin:0 0 5px;
     letter-spacing:0;
     line-height:26px
@@ -854,7 +854,7 @@ table {
     border:none!important;
     margin:0 auto;
     height:3px;
-    background:#0063a7;
+    background:#a91990;
     margin-bottom:20px
 }
 .hr-simple {
@@ -862,7 +862,7 @@ table {
     border:none!important;
     margin:0 auto;
     height:3px;
-    background:#0063a7;
+    background:#a91990;
     margin-bottom:13px
 }
 .tasgs {
@@ -873,7 +873,7 @@ table {
     font-weight:500
 }
 .tasgs span {
-    color:#0063a7
+    color: #a91990
 }
 .tag2 {
     color:#626262;
@@ -905,7 +905,7 @@ table {
     border:none!important;
     margin:2px 0;
     height:3px;
-    background:#0063a7;
+    background:#a91990;
     margin-bottom:13px
 }
 .range-slider {
@@ -926,7 +926,7 @@ table {
     background:linear-gradient(to right, #fff, #fff);
     width:24px;
     height:24px;
-    border:6px solid #0063a7;
+    border:6px solid #a91990;
     border-radius:50%;
     box-shadow:0 0 5px #555;
     cursor:pointer;
@@ -935,7 +935,7 @@ table {
     appearance:none
 }
 .range-slider input[type="range"]::-webkit-slider-thumb:hover, .range-slider input[type="range"]:active::-webkit-slider-thumb {
-    background:#0063a7;
+    background:#a91990;
     border-color:#fff
 }
 .range-slider input[type="range"]::-moz-range-thumb {
@@ -973,7 +973,7 @@ table {
     border:0
 }
 .demo {
-    border:solid 2px #0063a7;
+    border:solid 2px #a91990;
     padding:21px 10px 0;
     border-radius:5px;
     margin-top:6px;
@@ -1012,11 +1012,11 @@ table {
 }
 .calculater-back .thumbnail img {
     width:100%;
-    border:solid 2px #0063a7;
+    border:solid 2px #a91990;
     border-radius:100%
 }
 .calculater-back .thumbnail .client-name {
-    color:#0063a7;
+    color:#a91990;
     font-size:14px;
     margin-bottom:10px;
     margin-top:10px
@@ -1060,7 +1060,7 @@ table {
 .why-choos-us .thumbnail h3 {
     font-weight:500;
     font-size:17px;
-    color:#0063a7;
+    color:#a91990;
     margin:0 0 5px;
     letter-spacing:0;
     line-height:26px
@@ -1101,7 +1101,7 @@ table {
     background:#fff!important
 }
 .no-money a {
-    color:#0063a7
+    color:#a91990
 }
 .post-slide {
     background:#fff;
@@ -1122,19 +1122,19 @@ table {
 }
 .post-slide .post-title {
     margin:8px 0 15px;
-    color:#0063a7!important
+    color:#a91990!important
 }
 .post-slide .post-title a {
     font-size:20px;
     font-weight:500;
-    color:#0063a7;
+    color:#a91990;
     display:inline-block;
     text-transform:capitalize;
     transition:all .3s ease 0
 }
 .post-slide .post-title a:hover {
     text-decoration:none;
-    color:#0063a7
+    color:#a91990
 }
 .post-slide .post-date {
     text-transform:capitalize;
@@ -1147,7 +1147,7 @@ table {
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page span {
     background:#75bbeb!important;
     padding:0 21px!important;
-    border:solid 1px #0063a7
+    border:solid 1px #a91990
 }
 .blogs-home {
     width:100%;
@@ -1169,7 +1169,7 @@ table {
 .blogs-home .thumbnail h3 {
     margin:21px 0 10px;
     font-size:20px;
-    color:#0063a7;
+    color:#a91990;
     text-align:left;
     white-space:nowrap;
     overflow:hidden;
@@ -1182,7 +1182,7 @@ table {
     text-align:left
 }
 .blogs-home .thumbnail a {
-    color:#0063a7
+    color:#a91990
 }
 .blogs-home .thumbnail a:hover {
     color:#000;
@@ -1207,7 +1207,7 @@ table {
     padding:0!important
 }
 .footer-loanwalle {
-    background: #0363a3;
+    background: #a91990;
     padding:50px 0;
     margin:0;
     width:100%;
@@ -1243,14 +1243,14 @@ table {
     color:#CCC
 }
 .footer-copyright {
-    background: #09588d;
+    background: #a91990;
     padding:20px 0;
     margin:0;
     width:100%;
     float:left;
     color:#efefef;
     font-size:12px;
-    border-top: solid 1px #2473a8;
+    border-top: solid 1px #7d0469;
     text-align:center
 }
 .displays {
@@ -1260,7 +1260,7 @@ table {
     width:35px!important;
     height:14px!important;
     margin:0!important;
-    background-color:#0063a7!important
+    background-color: #a91990!important
 }
 .carousel-indicators li {
     display:inline-block;
@@ -1269,7 +1269,7 @@ table {
     margin:1px;
     text-indent:-999px;
     cursor:pointer;
-    background:#0063a7!important;
+    background: #a91990!important;
     border:1px solid #fff;
     border-radius:10px
 }
@@ -1471,7 +1471,7 @@ table {
     color:#fff
 }
 .eligibility-document h4 {
-    color:#0063a7;
+    color:#a91990;
     font-size:25px
 }
 .document ul {
@@ -1560,7 +1560,7 @@ table {
     border-radius:3px!important
 }
 .serviceBox .service-icon {
-    color:#0063a7;
+    color:#a91990;
     background:#fff;
     font-size:60px;
     line-height:110px;
@@ -1568,13 +1568,13 @@ table {
     height:130px;
     margin:0 auto 50px;
     border-radius:50%;
-    border:12px solid #0063a7;
+    border:12px solid #a91990;
     box-shadow:0 0 5px rgba(0, 0, 0, 0.3) inset, 0 15px 0 rgba(0, 0, 0, 0.1);
     position:relative
 }
 .serviceBox .service-icon:before, .serviceBox .service-icon:after {
     content:'';
-    background-color:#0063a7;
+    background-color:#a91990;
     height:17px;
     width:17px;
     border-radius:50%;
@@ -1589,7 +1589,7 @@ table {
     bottom:-50px
 }
 .serviceBox .title {
-    color:#0063a7;
+    color:#a91990;
     font-size:20px;
     font-weight:600;
     text-transform:uppercase;
@@ -1709,14 +1709,14 @@ table {
     background-color:#F97216
 }
 .serviceBoxa.blue {
-    color:#0063a7;
+    color:#a91990;
     text-align:center
 }
 .serviceBoxa.blue:before, .serviceBoxa.blue .service-icon, .serviceBoxa.blue .service-content {
-    border-color:#0063a7
+    border-color:#a91990
 }
 .serviceBoxa.blue .service-content:before, .serviceBoxa.blue .service-content:after {
-    background-color:#0398E0
+    background-color:#a91990
 }
 .serviceBoxa.black {
     color:#10222D
@@ -1752,7 +1752,7 @@ table {
     bottom:0
 }
 .serviceBoxb .service-icon {
-    color:#0063a7;
+    color:#a91990;
     background:var(--bg-gr_1);
     font-size:42px;
     line-height:104px;
@@ -1873,7 +1873,7 @@ table {
     --bg-gr_4:linear-gradient(to right, var(--cl_7), var(--cl_8))
 }
 .testimoniall {
-    background:#0063a7;
+    background:#a91990;
     text-align:center;
     padding:30px 30px 50px;
     margin:0 15px 100px;
@@ -1881,7 +1881,7 @@ table {
 }
 .testimoniall:before, .testimoniall:after {
     content:"";
-    border-top:40px solid #0063a7;
+    border-top:40px solid #a91990;
     border-right:125px solid transparent;
     position:absolute;
     bottom:-40px;
@@ -1929,7 +1929,7 @@ table {
 .testimoniall .title {
     font-size:15px;
     font-weight:700;
-    color:#0063a7;
+    color:#a91990;
     text-transform:capitalize;
     margin:0 0 5px
 }
@@ -1967,7 +1967,7 @@ table {
     font-weight:600;
     text-transform:uppercase;
     margin:0 0 10px;
-    color:#0063a7;
+    color:#a91990;
     text-align:left
 }
 .our-team {
@@ -2179,11 +2179,11 @@ table {
     text-align:center
 }
 .serviceBoxc:hover {
-    background:#0063a7;
+    background:#a91990;
     color:#fff!important
 }
 .serviceBoxc .service-icon {
-    color:#0063a7;
+    color:#a91990;
     font-size:55px;
     margin:0;
     transition:all .3s ease 0
@@ -2260,7 +2260,7 @@ table {
     padding:2px 20px
 }
 .counter .counter-icon {
-    color:#0063a7;
+    color:#a91990;
     background-color:#fff;
     font-size:20px;
     line-height:36px;
@@ -2353,7 +2353,7 @@ table {
     float:left;
     padding:0;
     margin:0;
-    background:#0063a7
+    background:#a91990
 }
 .loanwalle-vision .col-right {
     padding:66px 100px 50px 20px
@@ -2391,7 +2391,7 @@ table {
     color:#333
 }
 .loanwalle-mission h3 {
-    color:#0063a7;
+    color:#a91990;
     font-size:21px;
     margin:0 0 14px
 }
@@ -2589,7 +2589,7 @@ table {
     margin-bottom: 15px !important;
 }
 .search-button {
-    background: #0063a7 !important;
+    background: #a91990 !important;
     color: #fff !important;
     padding: 13px 45px !important;
     border: none !important;
@@ -2783,7 +2783,7 @@ table {
     padding: 0.5rem 1rem;
     line-height: 1.5;
     color: #464a4c;
-    border: 1px solid #0063a7;
+    border: 1px solid #a91990;
     border-radius: 0.25rem;
     height: 50px !important;
     font-weight: normal;/* box-shadow: 5px 5px 8px #cfcfcf !important; */
@@ -2802,7 +2802,7 @@ table {
     padding: 10px;
     line-height: 29px;
     color: #fff;
-    background-color: #0063a7;
+    background-color: #a91990;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 0 0.25rem 0.25rem 0;
 }
@@ -2814,8 +2814,8 @@ table {
 }
 .btn-default-my-upload {
     color: #fff !important;
-    background-color: #0063a7 !important;
-    border-color: #0063a7 !important;
+    background-color: #a91990 !important;
+    border-color: #a91990 !important;
     padding: 12px !important;
     outline: none !important;
     width: 85%;
@@ -3643,7 +3643,7 @@ label {
         background-position: 3px 6px;
     }
     .terms-banner {
-        background: #0063a7;
+        background: #a91990;
         padding: 20px 0px;
         text-align: center;
         width: 100%;
@@ -3794,7 +3794,7 @@ label {
         padding-left: 15px !important;
     }
     .subscribe-buton {
-        background: #0063a7 !important;
+        background: #a91990 !important;
         color: #fff !important;
         padding: 13px 30px !important;
         border: none !important;
@@ -3929,7 +3929,7 @@ label {
         line-height: 21px;
     }
     .eligibility-document h4 {
-        color: #0063a7;
+        color: #a91990;
         font-size: 18px;
     }
     .eligibility-document ul li {
@@ -3941,7 +3941,7 @@ label {
     .serviceBoxb h3 {
         font-size: 14px;
         margin: 0px 0px 5px 0px;
-        color: #0063a7;
+        color: #a91990;
         text-align: center;
     }
     .google-play {
@@ -3985,7 +3985,7 @@ label {
         color: #fff;
     }
     .background {
-        background:#0063a7 !important;
+        background:#a91990 !important;
     }
     .carousel-indicators li {
         display:none !important;
@@ -4044,7 +4044,7 @@ label {
     }
     .home-form-back .btn-default {
         background: #fff;
-        color: #0063a7;
+        color: #a91990;
         border: none;
         padding: 10px 9px;
     }
@@ -4107,7 +4107,7 @@ label {
     .blogs-home .thumbnail h3 {
         MARGIN: 21px 0px 10px 0px;
         font-size: 18px;
-        color: #0063a7;
+        color: #a91990;
     }
     .footer-loanwalle p {
         font-size: 11px;
@@ -4487,7 +4487,7 @@ label {
         line-height: 21px;
     }
     .eligibility-document h4 {
-        color: #0063a7;
+        color: #a91990;
         font-size: 18px;
     }
     .eligibility-document ul li {
@@ -4499,7 +4499,7 @@ label {
     .serviceBoxb h3 {
         font-size: 18px;
         margin: 0px 0px 5px 0px;
-        color: #0063a7;
+        color: #a91990;
     }
     .google-play {
         width: 35% !important;
@@ -4542,7 +4542,7 @@ label {
         color: #fff;
     }
     .background {
-        background:#0063a7 !important;
+        background:#a91990 !important;
     }
     .carousel-indicators li {
         display:none !important;
@@ -4573,12 +4573,12 @@ label {
         padding: 7px 15px !important;
     }
     .home-form-back {
-        background: #0063a7;
+        background: #a91990;
         padding: 3px 20px;
         margin: 0px 0px;
     }
     .loanwalle-form {
-        background: #0063a7 !important;
+        background: #a91990 !important;
         margin-top: 49px;
         padding-top: 27px;
     }
@@ -4608,7 +4608,7 @@ label {
     }
     .home-form-back .btn-default {
         background: #fff;
-        color: #0063a7;
+        color: #a91990;
         border: none;
         padding: 10px 9px;
     }
@@ -4664,7 +4664,7 @@ label {
     .blogs-home .thumbnail h3 {
         MARGIN: 21px 0px 10px 0px;
         font-size: 18px;
-        color: #0063a7;
+        color: #a91990;
     }
     .footer-loanwalle p {
         font-size: 11px;

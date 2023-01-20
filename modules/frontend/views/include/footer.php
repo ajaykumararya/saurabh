@@ -62,7 +62,7 @@
 <div class="footer-copyright">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">© 2022 Naman Finlease Private Limited.</div>
+            <div class="col-md-12">© Designed by WebtoPoint .</div>
         </div>
     </div>
 </div>
