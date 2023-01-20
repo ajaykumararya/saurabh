@@ -185,7 +185,7 @@ body {
     margin-top:18px!important
 }
 .verify-button {
-    background:#0363a3!important;
+    background:#a91990!important;
     color:#fff!important;
     padding:10px 50px!important;
     border:none!important;
@@ -200,7 +200,7 @@ body {
     text-align:center
 }
 .enter-otp strong {
-    color:#0d7ec0
+    color:#a91990
 }
 .resent-otp {
     font-style:italic;
@@ -212,11 +212,11 @@ body {
     border-radius:0 3px 3px 0!important;
     height:48px!important;
     margin-bottom:9px;
-    border:solid 1px #176694!important;
+    border:solid 1px #a91990!important;
     border-left:none!important
 }
 .submit-buttons {
-    background:#0363a3!important;
+    background:#a91990!important;
     color:#fff!important;
     padding:8px 44px!important;
     font-size:20px!important;
@@ -251,7 +251,7 @@ body {
     float:left!important;
     font-size:14px;
     color:#777;
-    border:solid 1px #176694;
+    border:solid 1px #a91990;
     padding:13px;
     border-radius:3px 0 0 3px!important
 }
@@ -263,11 +263,11 @@ body {
     text-align:center
 }
 .counter-prosses .fa {
-    border:solid 2px #0d7ec0;
+    border:solid 2px #a91990;
     padding:26px 27px;
     border-radius:100%;
     font-size:30px;
-    color:#0d7ec0
+    color:#a91990
 }
 .counter-prosses .thumbnail {
     padding:60px 15px;
@@ -279,7 +279,7 @@ body {
     margin-bottom:0
 }
 .numscroller-info-top {
-    color:#0d7ec0!important;
+    color:#a91990!important;
     font-weight:700;
     font-size:27px
 }
@@ -301,7 +301,7 @@ body {
 .modal-body {
     position:relative;
     padding:0 15px;
-    background:#0363a3!important;
+    background:#a91990!important;
     border-radius:3px
 }
 .box-popup {
@@ -321,16 +321,16 @@ body {
     border-radius:3px 0 0 3px!important;
     margin-top:0!important;
     padding:31px 8px 19px!important;
-    /* border-right:solid 1px #0363a3; */
+    /* border-right:solid 1px #a91990; */
     margin-bottom:0
 }
 .enter-form input {
     height:45px!important;
     margin-bottom:15px;
-    border:solid 1px #176694
+    border:solid 1px #a91990
 }
 .enter-form .btn {
-    background:#0363a3!important;
+    background:#a91990!important;
     color:#fff!important;
     padding:10px 50px!important;
     border:none!important;
@@ -347,7 +347,7 @@ body {
     border-radius:0 3px 3px 0!important;
     margin-top:0!important;
     margin-bottom:0;
-    border-left: solid 1px #0363a3;
+    border-left: solid 1px #a91990;
 }
 .ew_solution ul.ews_btns li {
     position:relative;
@@ -458,7 +458,7 @@ table {
     background:#fff
 }
 .contact-line h2 {
-    color:#0363a3;
+    color:#a91990;
     margin:0 0 13px!important;
     font-size:25px
 }
@@ -487,11 +487,11 @@ table {
 }
 .contact-line .thumbnail .fa {
     font-size:31px;
-    border:solid 2px #0363a3;
+    border:solid 2px #a91990;
     padding:18px;
     border-radius:100%;
     height:71px;
-    color:#0363a3!important;
+    color:#a91990!important;
     width:71px
 }
 .counter-line {
@@ -588,7 +588,7 @@ table {
 .input-loanwalle {
     height: 45px!important;
     border:
-        solid 1px #176694!important;
+        solid 1px #a91990!important;
     margin-bottom: 15px;
     color:#8c8c8c
 }
@@ -632,7 +632,7 @@ table {
     padding:6px 9px;
     text-align:right;
     line-height:29px;
-    border-right:solid 1px #065387
+    border-right:solid 1px #a91990
 }
 .top-right a:hover {
     color:#efefef;
@@ -645,7 +645,7 @@ table {
     margin:0
 }
 .top-phone {
-    border:solid 1px #0363a3!important;
+    border:solid 1px #a91990!important;
     padding:5px 10px!important;
     border-radius:3px!important;
     margin-top:20px!important;
@@ -654,7 +654,7 @@ table {
     font-size:15px!important
 }
 .top-phone .fa {
-    color:#0363a3!important
+    color:#a91990!important
 }
 .top-phone:hover {
     text-decoration:blink
@@ -749,7 +749,7 @@ table {
     height:47px!important;
     border-radius:3px 0 0 3px!important;
     margin-left:64px;
-    border:solid 1px #176694;
+    border:solid 1px #a91990;
     outline:none!important
 }
 .col-md-right {
@@ -771,7 +771,7 @@ table {
     margin-bottom:0
 }
 .inner-pages .thumbnail h4 {
-    color:#0363a3;
+    color:#a91990;
     margin:0 0 5px
 }
 .inner-pages .thumbnail h5 {
@@ -804,7 +804,7 @@ table {
 }
 .contact-pages .fa {
     font-size:64px!important;
-    color:#0363a3!important
+    color:#a91990!important
 }
 .contact-pages .inner-pages p {
     font-size:15px;
@@ -1001,7 +1001,7 @@ table {
     font-size:16px;
     font-weight:500;
     margin-bottom:6px;
-    color:#036aa2;
+    color:#a91990;
     letter-spacing:0;
     margin-bottom:0
 }
@@ -1142,10 +1142,11 @@ table {
     line-height:24px
 }
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-    background:#499ed9
+    background:#a91990
 }
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page span {
-    background:#75bbeb!important;
+    background:#a91990
+    !important;
     padding:0 21px!important;
     border:solid 1px #a91990
 }
@@ -1534,7 +1535,7 @@ table {
 }
 .mobile-app h3 {
     font-size:42px;
-    color:#0d7ec0;
+    color:#a91990;
     margin-top:133px;
     margin-bottom:9px
 }
@@ -1621,14 +1622,14 @@ table {
     color:#20BF6B
 }
 .serviceBox.blue .service-icon {
-    color:#2D98DA;
-    border-color:#2D98DA
+    color:#a91990;
+    border-color:#a91990
 }
 .serviceBox.blue .service-icon:before, .serviceBox.blue .service-icon:after {
-    background-color:#2D98DA
+    background-color:#a91990
 }
 .serviceBox.blue .title {
-    color:#2D98DA
+    color:#a91990
 }
 .serviceBoxa {
     color:#02c504;
@@ -1991,7 +1992,7 @@ table {
     left:0
 }
 .our-team .pic:after {
-    border-color:#0363a3 #e6e5e5 #e6e5e5 #0363a3;
+    border-color:#a91990 #e6e5e5 #e6e5e5 #a91990;
     z-index:1;
     transform:rotate(-10deg);
     transition:all .5s ease 0
@@ -2049,7 +2050,7 @@ table {
     transition:all .3s ease-out 0
 }
 .our-team .icon li a:hover {
-    background:#37b0f1;
+    background:#a91990;
     color:#fff
 }
 .our-teamm {
@@ -2063,7 +2064,7 @@ table {
 }
 .our-teamm .team-content {
     width:100%;
-    background:#0363a3;
+    background:#a91990;
     color:#fff;
     padding:15px 0 10px;
     position:absolute;
@@ -2079,7 +2080,7 @@ table {
     content:"";
     width:60%;
     height:38px;
-    background:#0363a3;
+    background:#a91990;
     position:absolute;
     top:-18px;
     transform:rotate(15deg);
@@ -2155,7 +2156,7 @@ table {
     color:#ff5543
 }
 .view-oprcu {
-    background:#0363a3;
+    background:#a91990;
     padding:15px 35px;
     border-radius:3px;
     color:#fff!important;
@@ -2214,10 +2215,10 @@ table {
     text-shadow:4px 4px rgba(255, 255, 255, 0.3)
 }
 .serviceBoxc.cyan .service-icon, .serviceBoxc.cyan .read-more {
-    color:#36ADB3
+    color:#a91990
 }
 .serviceBoxc.cyan:hover {
-    background:#36ADB3
+    background:#a91990
 }
 .serviceBoxc.blue .service-icon, .serviceBoxc.blue .read-more {
     color:#172E5A
@@ -2271,7 +2272,7 @@ table {
 }
 .counter .counter-value {
     color:#fff;
-    background:#034b7c;
+    background:#a91990;
     font-size:35px;
     font-weight:500;
     letter-spacing:.3px;
@@ -2302,13 +2303,13 @@ table {
     margin:0
 }
 .counter.orange .counter-value {
-    background-color:#034b7c
+    background-color:#a91990
 }
 .counter.purple .counter-value {
-    background-color:#034b7c
+    background-color:#a91990
 }
 .counter.green .counter-value {
-    background-color:#034b7c
+    background-color:#a91990
 }
 .city-banner {
     width:100%;
@@ -2419,7 +2420,7 @@ table {
 .reply-button {
     border:solid 1px #ddd;
     padding:5px 19px;
-    color:#0363a3
+    color:#a91990
 }
 .category-link {
     color:#333
@@ -2460,7 +2461,7 @@ table {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    vertical-align: middle;
+    vertical-align: m iddle;
     box-shadow: 0 0 10px #b9b8b8;
     border-radius: 3px;
 }
@@ -2483,7 +2484,7 @@ table {
     padding:2px !important;
 }
 .blog-tags {
-    background: #0363a3;
+    background: #a91990;
     color: #fff;
     font-size: 11px;
     padding: 3px 6px;
@@ -2841,7 +2842,7 @@ table {
 }
 .form_my textarea {
     padding: 8px 3px;
-    border: 1px solid #176694;
+    border: 1px solid #a91990;
     height: 100px;
     outline: none;
     padding: 10px;
@@ -2882,7 +2883,7 @@ table {
     color: #fff!important;
     margin-top: -24px!important;
     float: left!important;
-    background: #0363a3!important;
+    background: #a91990!important;
     padding: 0 20px!important;
 }
 .form_my span {
@@ -2894,7 +2895,7 @@ table {
 .form_my input {
     width: 63%;
     float: right;
-    border: 1px solid #176694;
+    border: 1px solid #a91990;
     height:45px;
     padding:2px 10px !important;
     border-radius: 3px;
@@ -2905,16 +2906,16 @@ table {
     overflow-x:auto;
 }
 .apply-now-buttonn {
-    background: #0363a3;
+    background: #a91990;
     padding: 6px 10px;
     border-radius: 3px;
     color: #fff;
-    border:solid 1px #0363a3 !important;
+    border:solid 1px #a91990 !important;
 }
 .apply-now-buttonn:hover {
     background: #fff;
-    border:solid 1px #0363a3 !important;
-    color:#0363a3 !important;
+    border:solid 1px #a91990 !important;
+    color:#a91990 !important;
     text-decoration:blink;
 }
 .car-mar {
@@ -2946,7 +2947,7 @@ input[type=file] {
     line-height: 1.5 !important;
     color: #495057 !important;
     background-color: #fff !important;
-    border: 1px solid #176694 !important;
+    border: 1px solid #a91990 !important;
     border-radius: 0.25rem !important;
     width: 93% !important;
     height: 45px !important;
@@ -2968,7 +2969,7 @@ input[type=file] {
     line-height: 1.5 !important;
     color: #ffffff !important;
     content: "Browse" !important;
-    background-color: #0363a3 !important;
+    background-color: #a91990 !important;
     border-left: inherit !important;
     border-radius: 0 0.25rem 0.25rem 0 !important;
     height: 44px !important;
@@ -3088,13 +3089,13 @@ label {
     width: 97px;
     height: 97px;
     padding: 3px 2px;
-    border-right: solid #0363a3;
+    border-right: solid #a91990;
 }
 
 .readiso-appl:hover
 {
 
-    border: solid 2px #0363a3;
+    border: solid 2px #a91990;
     cursor:pointer;
 
 }
@@ -3139,7 +3140,7 @@ label {
 }
 .immediate-financial
 {
-    background: #0363a3;
+    background: #a91990;
     padding: 5px 10px;
     color: #fff;
     border-radius: 3px;
@@ -3177,7 +3178,7 @@ label {
 
     .enter-form {
 
-        border-left: solid 0px #0363a3;
+        border-left: solid 0px #a91990;
     }
 
     .box-popup {
@@ -3397,7 +3398,7 @@ label {
         font-size: 12px !important;
     }
     .verify-button {
-        background: #0363a3 !important;
+        background: #a91990 !important;
         color: #fff !important;
         padding: 4px 29px !important;
     }
@@ -3581,7 +3582,7 @@ label {
     }
     .mobile-app h3 {
         font-size: 18px;
-        color: #0d7ec0;
+        color: #a91990;
         margin-top:45px;
         margin-bottom: 9px;
     }
@@ -3590,11 +3591,11 @@ label {
         line-height:25px !important;
     }
     .apply-now-buttonn {
-        background: #0363a3;
+        background: #a91990;
         padding: 0;
         border-radius: 3px;
         color: #fff;
-        border: solid 1px #0363a3 !important;
+        border: solid 1px #a91990 !important;
     }
     .marggg {
         margin-top:35px;
@@ -4006,17 +4007,17 @@ label {
         display:none !important;
     }
     .top-phone {
-        border: solid 0px #0363a3 !important;
+        border: solid 0px #a91990 !important;
         margin-top: 10px !important;
         font-size: 12px !important;
     }
     .home-form-back {
-        background: #0363a3;
+        background: #a91990;
         padding: 3px 20px;
         margin: 0px 0px;
     }
     .loanwalle-form {
-        background: #0363a3 !important;
+        background: #a91990 !important;
         margin-top: 50px;
     }
     .form-tag {
@@ -4266,7 +4267,7 @@ label {
         line-height: 1.5 !important;
         color: #495057 !important;
         background-color: #fff !important;
-        border: 1px solid #176694 !important;
+        border: 1px solid #a91990 !important;
         border-radius: 0.25rem !important;
         width: 63% !important;
         height: 45px !important;
@@ -4317,7 +4318,7 @@ label {
         float: left;
     }
     .verify-button {
-        background: #0363a3 !important;
+        background: #a91990 !important;
         color: #fff !important;
         padding: 10px 50px !important;
         border: none !important;
@@ -4336,7 +4337,7 @@ label {
     }
     .mobile-app h3 {
         font-size: 25px;
-        color: #0d7ec0;
+        color: #a91990;
         margin-top: 18px;
         margin-bottom: 10px;
     }
@@ -4566,7 +4567,7 @@ label {
         float:right !important;
     }
     .top-phone {
-        border: solid 1px #0363a3 !important;
+        border: solid 1px #a91990 !important;
         margin-top: 10px !important;
         font-size: 12px !important;
         margin-right: 45px !important;
