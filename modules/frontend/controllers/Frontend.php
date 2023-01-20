@@ -10,11 +10,14 @@ class Frontend extends MX_Controller {
         $this->load->library('common/main_lib');
         $this->load->database();
     }
-    
+      
     public function index()
 	{
-		$this->load->view('welcome_message_hmvc',['heading' => 'Welcome Codeigniter'] );
+		// $this->load->view('welcome_message_hmvc',['heading' => 'Welcome Codeigniter'] );
+        $this->load->view('index');
 	}
+   
+
     
     public function hmvc()
     {
