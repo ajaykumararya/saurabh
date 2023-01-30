@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Admin extends MX_Controller {
+class Admin extends Admin_Controller {
 
     function __construct()
     {
@@ -10,25 +10,7 @@ class Admin extends MX_Controller {
         $this->load->model('pages_model');
         $this->load->library('common/main_lib');
 
-        $thisMethod = strtolower($this->router->fetch_method());
-        $thisController = strtolower($this->router->fetch_class());
-
-        if($this->session->userdata('admin_logged_in') != '1' AND $thisMethod != 'index'){
-            redirect('admin');
-        }
-        //обработка определения языка
-        if(!isset($_SESSION["lang"])){
-            $result['language'] = 'english';//$this->db->select('*')->where('default', '1')->get('language')->row_array(); // выборка ленгвиж из таблицы настройки сайта
-        }else{ 
-            $result['language'] = $_SESSION["lang"]; 
-        }
-        $directory = 'modules/admin/language/'.$result['language']; // вместо language/russian дефолт ленгвиж из базы
-        //
-        $this->load->library('common/language',$directory);
-        $this->language->load('common/login');
-        
-        //общая библиотека языка
-        $this->lang->load($result['language'],$result['language']);
+     
         
     }
 
@@ -46,7 +28,7 @@ class Admin extends MX_Controller {
                 $passmd5 = ($data['password']);
             }
             else    
-            $data = ['username' => '','password' => ''];
+                $data = ['username' => '','password' => ''];
            
         }
         if($this->session->userdata('admin_logged_in') == '1'){
@@ -54,7 +36,7 @@ class Admin extends MX_Controller {
             // добавляем на главную админки перевод
             
             $data = array(
-                'title' => 'Главная админки',
+                'title' => 'Admin',
                 'text_home_site' => $this->language->get('text_home_site'),
                 'text_profile' => $this->language->get('text_profile'),
                 'text_exit' => $this->language->get('text_exit'),
@@ -164,13 +146,16 @@ class Admin extends MX_Controller {
     function logoff()
     {
         $data = array(
-            'title' => 'Авторизация',
+            'title' => 'Logout',
             'error' => ''
         );
         $this->session->sess_destroy();  // обнуляем сессию
         redirect(base_url().'admin');
     }
     
+    function users(){
+
+    }
     
     
     //forgot
@@ -238,31 +223,31 @@ class Admin extends MX_Controller {
 //       
 //	}
     
-//    public function editor()
-//	{
-//	   
-//        if($this->session->userdata('admin_logged_in') == '1'){
-//            $data = array(
-//            'title' => 'Редактор',
-//            'user_img' => $this->session->userdata('user_img'),
-//            'name' => $this->session->userdata('name'),
-//            'user_id' => $this->session->userdata('user_id'),
-//            'compani' => 'RAMStudio',
-//            'url' => 'http://moroz.rv.ua',
-//            'heading' => 'Страница из модуля админки - Welcome to CodeIgniter HMVC!'
-//        );  
-//          
-//    		$this->parser->parse('header.tpl', $data);
-//            $this->parser->parse('editors.tpl', $data);
-//            $this->parser->parse('footer.tpl', $data);
-//        }else{
-//            $data = array(
-//                'error' => ''
-//            );
-//            redirect(base_url().'admin/');
-//        }
-//        
-//	}
+   public function editor()
+	{
+	   
+    //    if($this->session->userdata('admin_logged_in') == '1'){
+           $data = array(
+           'title' => 'Редактор',
+           'user_img' => $this->session->userdata('user_img'),
+           'name' => $this->session->userdata('name'),
+           'user_id' => $this->session->userdata('user_id'),
+           'compani' => 'RAMStudio',
+           'url' => 'http://moroz.rv.ua',
+           'heading' => 'Страница из модуля админки - Welcome to CodeIgniter HMVC!'
+       );  
+         
+   		$this->parser->parse('header.tpl', $data);
+           $this->parser->parse('editors.tpl', $data);
+           $this->parser->parse('footer.tpl', $data);
+    //    }else{
+    //        $data = array(
+    //            'error' => ''
+    //        );
+    //        redirect(base_url().'admin/');
+    //    }
+       
+	}
     
     //profile
     //public function profile()

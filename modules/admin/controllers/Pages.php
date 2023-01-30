@@ -140,7 +140,7 @@ class Pages extends MX_Controller {
     //update
     public function update()
 	{
-	   
+        $data = [];
         if($this->session->userdata('logged_in') == '1'){
             $data_header = array(
                 'title' => 'Изменить страницу',

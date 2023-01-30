@@ -11,7 +11,7 @@ class Main_lib {
     
     function check_user($username){
         $get =  $this->CI->db->select('*')->where('username', $username)->get('users');
-        
+      
         if($get->num_rows())
                 return $get->row_array();
         return false;

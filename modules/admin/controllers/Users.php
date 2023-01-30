@@ -1,31 +1,21 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Users extends MX_Controller {
+class Users extends Admin_Controller {
 
     function __construct()
     {
+
         parent::__construct();
         $this->load->database();
         $this->load->library('common/main_lib');
-        //обработка определения языка
-        if(!isset($_SESSION["lang"])){
-            $result = $this->db->select('*')->where('default', '1')->get('language')->row_array(); // выборка ленгвиж из таблицы настройки сайта
-        }else{ 
-            $result['language'] = $_SESSION["lang"]; 
-        }
-        $directory = 'modules/admin/language/'.$result['language']; // вместо language/russian дефолт ленгвиж из базы
-        //
-        $this->load->library('common/language',$directory);
-        
         $this->load->model('users_model');
-        //общая библиотека языка
-        $this->lang->load($result['language'],$result['language']);
+        //обработка определения языка
+      
     }
 
 	public function index()
 	{
-        if($this->session->userdata('logged_in') == '1'){
             $data_header = array(
                 'title' => 'Пользователи',
                 'text_home_site' => $this->language->get('text_home_site'),
@@ -58,18 +48,12 @@ class Users extends MX_Controller {
             $this->parser->parse('users/data_users.tpl', $data);
             $this->parser->parse('footer.tpl', $data);
             
-        }else{  
-            $data = array(
-                'error' => ''
-            );
-            $this->parser->parse('login.tpl', $data); 
-            
-        }      
+             
 	}
     
     public function edit($post = FALSE)
 	{
-        if($this->session->userdata('logged_in') == '1'){
+        // if($this->session->userdata('logged_in') == '1'){
             $data_header = array(
                 'title' => 'Пользователи',
                 'user_img' => $this->session->userdata('user_img'),
@@ -91,20 +75,13 @@ class Users extends MX_Controller {
             $this->parser->parse('header.tpl', $data_header);
             $this->parser->parse('users/edit_users.tpl', $data);
             $this->parser->parse('footer.tpl', $data);
-            
-        }else{  
-            $data = array(
-                'error' => ''
-            );
-            $this->parser->parse('login.tpl', $data); 
-            
-        }      
+         
 	}
     
     //add
     public function add()
 	{
-        if($this->session->userdata('logged_in') == '1'){
+        // if($this->session->userdata('logged_in') == '1'){
             $data_header = array(
                 'title' => 'Пользователи',
                 'user_img' => $this->session->userdata('user_img'),
@@ -172,20 +149,13 @@ class Users extends MX_Controller {
                 $this->parser->parse('users/add_users.tpl', $data);
                 $this->parser->parse('footer.tpl', $data);
             }
-             
-        }else{  
-            $data = array(
-                'error' => ''
-            );
-            $this->parser->parse('login.tpl', $data); 
-            
-        }      
+                  
 	}
     
     
     public function remove($id = FALSE)
 	{
-        if($this->session->userdata('logged_in') == '1'){
+        // if($this->session->userdata('logged_in') == '1'){
             $data_header = array(
                 'title' => 'Страница ',
                 'user_img' => $this->session->userdata('user_img'),
@@ -206,13 +176,13 @@ class Users extends MX_Controller {
             $this->parser->parse('users/data_users.tpl', $data);
             $this->parser->parse('footer.tpl', $data);
             
-        }else{  
-            $data = array(
-                'error' => ''
-            );
-            $this->parser->parse('login.tpl', $data); 
+        // }else{  
+        //     $data = array(
+        //         'error' => ''
+        //     );
+        //     $this->parser->parse('login.tpl', $data); 
             
-        }      
+        // }      
 	}
     
     
@@ -220,7 +190,7 @@ class Users extends MX_Controller {
     public function update()
 	{
 	   
-        if($this->session->userdata('logged_in') == '1'){
+        // if($this->session->userdata('logged_in') == '1'){
             $data_header = array(
                 'title' => 'Изменить пользоателя',
                 'user_img' => $this->session->userdata('user_img'),
@@ -283,12 +253,12 @@ class Users extends MX_Controller {
                 $this->parser->parse('users/edit_users.tpl', $data);
                 $this->parser->parse('footer.tpl', $data);
             }
-        }else{
-            $data = array(
-                'error' => ''
-            );
-            redirect(base_url().'admin/');
-        }
+        // }else{
+        //     $data = array(
+        //         'error' => ''
+        //     );
+        //     redirect(base_url().'admin/');
+        // }
         
 	}
     
@@ -298,7 +268,7 @@ class Users extends MX_Controller {
     public function count_user($permiss = NULL)
 	{
 	   
-        if($this->session->userdata('logged_in') == '1'){
+        // if($this->session->userdata('logged_in') == '1'){
             $data_header = array(
                 'title' => 'Изменить пользоателя',
                 'user_img' => $this->session->userdata('user_img'),
@@ -310,12 +280,12 @@ class Users extends MX_Controller {
             $data = $this->users_model->count_user('users',$permiss);
             echo $data;
             
-        }else{
-            $data = array(
-                'error' => ''
-            );
-            redirect(base_url().'admin/');
-        }
+        // }else{
+        //     $data = array(
+        //         'error' => ''
+        //     );
+        //     redirect(base_url().'admin/');
+        // }
         
 	}
     
