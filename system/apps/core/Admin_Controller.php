@@ -25,6 +25,10 @@ class Admin_Controller extends MX_Controller{
         echo 'hello saurabh';
     }
 
+    function testing1(){
+        echo 'kk';
+    }
+
     
 }
 
